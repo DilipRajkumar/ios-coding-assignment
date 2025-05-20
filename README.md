@@ -8,17 +8,24 @@ Candidate should have Xcode and Git installed on their machine.
 # Step 1
 Fork this repository and clone it.
 
-Create a new iOS Application "Weather App"
- * For the UI, you can use these mechanisms: Storyboards/XIBs, straight code, SwiftUI, or a combination of any.
- * Use the Model-View-ViewModel (MVVM) pattern. Bonus points for also using the Coordinator pattern.
+Open the **WeatherPlus** project in Xcode.
+ * For the UI, you will use SwiftUI
+ * Use the [Model-View-ViewModel](https://en.wikipedia.org/wiki/Model–view–viewmodel) 
+   (MVVM) pattern. Bonus points for also using the Coordinator pattern.
 
 # Step 2
 
-Use the [Open Weather API](https://openweathermap.org/api) to fetch weather details. Here is an example call requesting the hourly temperature and rainfall for the lat/long of New York City, NY.
+Use the [Open Weather API](https://openweathermap.org/api) to fetch weather
+details. Here is an example call requesting the hourly temperature and rainfall
+for the lat/long of New York City, NY.
 
 `https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&hourly=temperature_2m,rain`
 
-Please use the latitude and longitude of the following cities to fetch temperature and rainfall conditions every hour of the day. A day is considered to run from 00:00:00 through 23:59:59. Hours should be displayed in the app according to the device's time display option (_Settings->General->Date&Time->24-Hour Time_).
+Please use the latitude and longitude of the following cities to fetch
+temperature and rainfall conditions for every hour of the day. A day is
+considered to run from 00:00:00 through 23:59:59. Hours should be displayed in
+the app according to the device's time display option 
+(_Settings->General->Date&Time->24-Hour Time_).
 
 | City | Lat  | Long |
 | ------- | --- | --- |
@@ -26,7 +33,11 @@ Please use the latitude and longitude of the following cities to fetch temperatu
 | Dallas | 32.78 | -96.81 |
 | Miami | 25.77 | -80.19 |
 
-Use the images included in the `assets` folder for a visual indicator of the weather conditions. Any precipitation `>0.0` and `<1.0` should be considered *light rain*. Precipitation `>=1.0` should be considered *heavy rain*. No precipitation is *sunny*.
+Use the images included in the `assets` folder (in the root directory of your
+local clone) for a visual indicator of the weather conditions. Any
+precipitation `>0.0` and `<1.0` should be considered *light rain*.
+Precipitation `>=1.0` should be considered *heavy rain*. No precipitation
+is *sunny*.
 
 Here is a rough design for the sample app.
 
@@ -34,15 +45,20 @@ Here is a rough design for the sample app.
 
 
 # Expected funtionality
-1. Fetch the current temperature for the three cities and list their current temperature, along with a rain or sun symbol as appropriate. 
-1. Using the a control at the top of the main screen, switch between Celcius and Farenheit. This control can be any type you choose.
-1. Clicking on a row will display the full weather report of the selected city for each hour of the day
+1. Fetch the current temperature for the three cities and list their current
+   temperature, along with a rain or sun symbol as appropriate. 
+1. Using a control at the top of the main screen, switch between Celcius and
+   Farenheit. This control can be any type you choose.
+1. Clicking on a row will display the full weather report of the selected
+   city for each hour of the day
 1. The temperature system selected in view 1 should be carried to view 2.
 
 
 # Evaluation
 - Clean, readable code
-- Knowledge of MVVM, delegation, UI and navigation, fetching and parsing JSON data, git.
+- Knowledge of MVVM, delegation, UI and navigation, fetching and parsing JSON
+  data, git.
 
 # Acknowledgements
-Weather image assets <a href="http://www.freepik.com">designed by Anindyanfitri / Freepik</a>.
+Weather image assets <a href="http://www.freepik.com">designed by
+Anindyanfitri / Freepik</a>.
