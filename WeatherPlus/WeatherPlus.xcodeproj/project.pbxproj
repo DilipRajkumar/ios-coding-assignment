@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB784A842DE6112B00A51FA7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB784A832DE6112B00A51FA7 /* README.md */; };
 		BBF60A6A2DE60FAF0016CB3F /* WeatherPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF60A692DE60FAF0016CB3F /* WeatherPlusApp.swift */; };
 		BBF60A6C2DE60FAF0016CB3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF60A6B2DE60FAF0016CB3F /* ContentView.swift */; };
 		BBF60A6E2DE60FB00016CB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF60A6D2DE60FB00016CB3F /* Assets.xcassets */; };
@@ -35,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB784A832DE6112B00A51FA7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BBF60A662DE60FAF0016CB3F /* WeatherPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF60A692DE60FAF0016CB3F /* WeatherPlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPlusApp.swift; sourceTree = "<group>"; };
 		BBF60A6B2DE60FAF0016CB3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 		BBF60A5D2DE60FAF0016CB3F = {
 			isa = PBXGroup;
 			children = (
-				BB784A832DE6112B00A51FA7 /* README.md */,
 				BBF60A682DE60FAF0016CB3F /* WeatherPlus */,
 				BBF60A792DE60FB00016CB3F /* WeatherPlusTests */,
 				BBF60A832DE60FB00016CB3F /* WeatherPlusUITests */,
@@ -234,7 +231,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB784A842DE6112B00A51FA7 /* README.md in Resources */,
 				BBF60A712DE60FB00016CB3F /* Preview Assets.xcassets in Resources */,
 				BBF60A6E2DE60FB00016CB3F /* Assets.xcassets in Resources */,
 			);
